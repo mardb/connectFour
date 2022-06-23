@@ -16,7 +16,7 @@ class Player {
    */
   createTokens(num) {
     const tokens = [];
-    for (let i = 0; i < num.length; i++) {
+    for (let i = 0; i < num; i++) {
       let token = new Token(i, this);
       tokens.push(token);
     }
@@ -38,5 +38,14 @@ class Player {
 
   get activeToken() {
     return this.unusedTokens[0];
+  }
+
+
+    /**
+     * Check if a player has any undropped tokens left
+     * @return {Boolean} 
+     */
+     checkTokens(){
+      return this.unusedTokens.length == 0 ? false : true;
   }
 }
