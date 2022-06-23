@@ -28,10 +28,10 @@ this.radius =  this.radius/ 2
  * @param {Object} token - The dropped token
  */
 mark(token){
-
+this.token = token;
 }
-get owner(){
+// get owner(){
   
-} 
+// } 
   
 }
