@@ -1,11 +1,11 @@
 class Space {
-  constructor(x, y, id, token, diameter, radius){
+  constructor(x, y){
 this.x = x;
 this.y = y;
 this.id = `space-${x}-${y}`
 this.token = null;
 this.diameter = 76;
-this.radius =  this.radius/2
+this.radius =  this.radius/ 2
 // this.tokens = this.createTokens(21);
   }
 /**
@@ -23,5 +23,15 @@ this.radius =  this.radius/2
   
     document.getElementById("mask").appendChild(svgSpace);   
   }
-  setAttributeNS(){}
+  /**
+ * Updates space to reflect a token has been dropped into it.
+ * @param {Object} token - The dropped token
+ */
+mark(token){
+
+}
+get owner(){
+  
+} 
+  
 }

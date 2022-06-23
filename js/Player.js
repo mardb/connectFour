@@ -6,6 +6,9 @@ class Player {
     this.active = active;
     this.tokens = this.createTokens(21);
   }
+
+
+  
   /**
    * Creates token objects for player
    * @param     {number}    num - Number of token objects to be created
@@ -19,6 +22,8 @@ class Player {
     }
     return tokens;
   }
+
+
   /**
    * Gets the active token ny returning the first token in the array of unused tokens
    * @return {array} Array of unused tokens.
